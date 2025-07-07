@@ -1,0 +1,43 @@
+﻿@page
+@model QuanLyBanHang.Pages.DangKyModel
+@{
+    ViewData["Title"] = "Đăng ký tài khoản";
+}
+
+<div class="login-wrapper">
+    <h2>Đăng ký tài khoản</h2>
+
+    <form method="post">
+        <div class="login-form">
+            <input asp-for="Input.HoTen" class="input-field" placeholder="Họ và tên" />
+            <span asp-validation-for="Input.HoTen" class="text-danger"></span>
+
+            <input asp-for="Input.Email" class="input-field" placeholder="Email" type="email" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+
+            <input asp-for="Input.Password" class="input-field" placeholder="Mật khẩu" type="password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+            <button type="submit" class="btn-primary">Đăng ký</button>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <p class="text-danger">@Model.ErrorMessage</p>
+            }
+            @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+            {
+                <p class="text-success">@Model.SuccessMessage</p>
+            }
+
+            <p class="signup-prompt">
+                Đã có tài khoản? <a asp-page="/DangNhap" class="link-text">Đăng nhập ngay</a>
+            </p>
+        </div>
+    </form>
+
+    <link href="~/css/dangnhap.css" rel="stylesheet" />
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
