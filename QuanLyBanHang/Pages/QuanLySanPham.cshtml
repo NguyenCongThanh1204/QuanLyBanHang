@@ -1,0 +1,87 @@
+﻿@page
+@model QuanLyBanHang.Pages.QuanLySanPhamModel
+@{
+    Layout = "_Layout";
+    
+
+}
+<link rel="stylesheet" href="~/css/QuanLySanPham.css" />
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-2 bg-dark text-white vh-100 p-3">
+            <h5>Tên Shop</h5>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Danh mục</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Tài khoản</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Báo cáo</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-10 p-4">
+            <h2>Quản Lý Sản Phẩm</h2>
+
+            <!-- Tìm kiếm + Bộ lọc -->
+            <div class="d-flex gap-2 my-3">
+                <input type="text" class="form-control w-25" placeholder="Nhập từ khóa" />
+                <select class="form-select w-25">
+                    <option>Chủ đề</option>
+                </select>
+                <select class="form-select w-25">
+                    <option>Sắp xếp</option>
+                </select>
+                <select class="form-select w-25">
+                    <option>Hiển thị</option>
+                </select>
+                <button class="btn btn-dark">Cập nhật</button>
+                <button class="btn btn-secondary">Thêm mới</button>
+            </div>
+
+            <!-- Bảng sản phẩm -->
+            <table class="table table-bordered text-center align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Xóa</th>
+                        <th>STT</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá sản phẩm</th>
+                        <th>Mô tả</th>
+                        <th>Ngày nhập</th>
+                        <th>Hiển Thị</th>
+                        <th>Size</th>
+                        <th>Tác Vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.DanhSachSanPham.Count; i++)
+                    {
+                        var sp = Model.DanhSachSanPham[i];
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>@(i + 1)</td>
+                            <td>@sp.TenSp</td>
+                            <td>@string.Format("{0:N0}", sp.Gia) VND</td>
+                            <td>@sp.MoTa</td>
+                            <td>@sp.NgayNhap?.ToString("dd/MM/yyyy")</td>
+                            <td>@sp.SoLuong</td>
+                            <td>@sp.Size</td>
+                            <td>
+                                <a href="/SanPham/Edit/@sp.MaSp" title="Chỉnh sửa">
+                                    <i class="fas fa-pen text-info"></i>
+                                </a>
+                                <a href="/SanPham/Duplicate/@sp.MaSp" title="Sao chép">
+                                    <i class="fas fa-copy text-primary mx-2"></i>
+                                </a>
+                                <a href="/SanPham/Delete/@sp.MaSp" title="Xóa" onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?');">
+                                    <i class="fas fa-trash text-danger"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

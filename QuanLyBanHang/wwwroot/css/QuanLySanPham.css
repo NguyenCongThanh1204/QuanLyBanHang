@@ -1,0 +1,97 @@
+﻿.wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.control-panel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+    .control-panel input,
+    .control-panel select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 180px;
+    }
+
+    .control-panel button {
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+.btn-update {
+    background-color: #007bff;
+}
+
+    .btn-update:hover {
+        background-color: #0069d9;
+    }
+
+.btn-add {
+    background-color: #6c757d;
+}
+
+    .btn-add:hover {
+        background-color: #5a6268;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    vertical-align: middle;
+}
+
+thead {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.action-icons a {
+    margin: 0 6px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.action-icons i.fa-pen {
+    color: #17a2b8;
+}
+
+.action-icons i.fa-copy {
+    color: #007bff;
+}
+
+.action-icons i.fa-trash {
+    color: #dc3545;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
