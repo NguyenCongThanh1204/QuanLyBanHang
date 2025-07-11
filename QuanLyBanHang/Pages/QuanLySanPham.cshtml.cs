@@ -6,9 +6,9 @@ namespace QuanLyBanHang.Pages
 {
     public class QuanLySanPhamModel : PageModel
     {
-        private readonly QLBanGiayContext _context;
+        private readonly QLBHangContext _context;
 
-        public QuanLySanPhamModel(QLBanGiayContext context)
+        public QuanLySanPhamModel(QLBHangContext context)
         {
             _context = context;
         }

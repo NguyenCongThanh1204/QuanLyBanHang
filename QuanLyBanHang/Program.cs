@@ -6,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-// Add DbContext
-builder.Services.AddDbContext<QLBanGiayContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("QLBanGiayConnection")));
+builder.Services.AddDbContext<QLBHangContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("QLBanHangConnection")));
+
 
 
 builder.Services.AddSession(options =>

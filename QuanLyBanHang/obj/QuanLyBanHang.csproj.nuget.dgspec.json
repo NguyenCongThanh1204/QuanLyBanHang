@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang.csproj": {}
+    "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\QuanLyBanHang.csproj": {}
   },
   "projects": {
-    "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang.csproj": {
+    "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\QuanLyBanHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang.csproj",
+        "projectUniqueName": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\QuanLyBanHang.csproj",
         "projectName": "QuanLyBanHang",
-        "projectPath": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang.csproj",
+        "projectPath": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\QuanLyBanHang.csproj",
         "packagesPath": "C:\\Users\\THANH\\.nuget\\packages\\",
-        "outputPath": "D:\\doAn403\\QuanLyBanHang\\obj\\",
+        "outputPath": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -51,6 +51,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

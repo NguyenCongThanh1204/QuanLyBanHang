@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\doAn403\\QuanLyBanHang\\",
+  "WorkspaceRootPath": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|d:\\doan403\\quanlybanhang\\pages\\shared\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|solutionrelative:pages\\shared\\test.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|d:\\aaaaaa\\quanlybanhang\\quanlybanhang\\pages\\quanlysanpham.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|solutionrelative:pages\\quanlysanpham.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|d:\\aaaaaa\\quanlybanhang\\quanlybanhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|d:\\aaaaaa\\quanlybanhang\\quanlybanhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{36508556-BAE9-4D3B-90BB-B1E4058D2A05}|QuanLyBanHang.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +43,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "test.cshtml",
-              "DocumentMoniker": "D:\\doAn403\\QuanLyBanHang\\Pages\\Shared\\test.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Shared\\test.cshtml",
-              "ToolTip": "D:\\doAn403\\QuanLyBanHang\\Pages\\Shared\\test.cshtml",
-              "RelativeToolTip": "Pages\\Shared\\test.cshtml",
+              "Title": "QuanLySanPham.cshtml.cs",
+              "DocumentMoniker": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\Pages\\QuanLySanPham.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\QuanLySanPham.cshtml.cs",
+              "ToolTip": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\Pages\\QuanLySanPham.cshtml.cs",
+              "RelativeToolTip": "Pages\\QuanLySanPham.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T16:53:58.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T09:30:45.081Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T16:48:27.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\aaaaaa\\QuanLyBanHang\\QuanLyBanHang\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T16:48:09.9Z",
               "EditorCaption": ""
             }
           ]
@@ -51,10 +85,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"

@@ -1,0 +1,9 @@
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.csproj.AssemblyReference.cache
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.GeneratedMSBuildEditorConfig.editorconfig
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.AssemblyInfoInputs.cache
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.AssemblyInfo.cs
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.csproj.CoreCompileInputs.cache
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.MvcApplicationPartsAssemblyInfo.cache
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.RazorAssemblyInfo.cache
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.RazorAssemblyInfo.cs
+D:\aaaaaa\QuanLyBanHang\QuanLyBanHang\obj\Debug\net8.0\QuanLyBanHang.sourcelink.json
