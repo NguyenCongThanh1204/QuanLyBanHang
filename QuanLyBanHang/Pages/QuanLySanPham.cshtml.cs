@@ -13,7 +13,8 @@ namespace QuanLyBanHang.Pages
             _context = context;
         }
 
-        public List<SanPham> DanhSachSanPham { get; set; } = new();
+        public List<SanPham> DanhSachSanPham { get; set; } = new List<SanPham>();
+
 
         public void OnGet()
         {

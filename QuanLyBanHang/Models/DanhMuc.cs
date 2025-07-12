@@ -17,6 +17,10 @@ public partial class DanhMuc
     [StringLength(100)]
     public string? TenDm { get; set; }
 
+    [Column("HinhAnh")]
+    [StringLength(50)]
+    public string? HinhAnh { get; set; }
+
     [InverseProperty("MaDmNavigation")]
     public virtual ICollection<SanPham> SanPhams { get; set; } = new List<SanPham>();
 }

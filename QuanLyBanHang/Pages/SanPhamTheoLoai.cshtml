@@ -1,0 +1,54 @@
+@page
+@model QuanLyBanHang.Pages.SanPhamTheoLoaiModel
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<link rel="stylesheet" href="/Content/SanPhamTheoDanhMuc.css" />
+
+<div class="shop-container">
+    <div class="shop-grid">
+        @if (Model.SanPhams.Count == 0)
+        {
+            <p class="text-muted">Không tìm thấy sản phẩm nào.</p>
+        }
+        else
+        {
+            foreach (var sp in Model.SanPhams)
+            {
+                <div class="shop-card">
+                    <form method="post" asp-page-handler="ThemVaoGio">
+                        <!-- Dữ liệu cần thiết để xử lý -->
+                        <input type="hidden" name="maSp" value="@sp.MaSp" />
+                        <input type="hidden" name="maDM" value="@Model.MaDM" />
+                        <input type="hidden" name="tuKhoa" value="@Model.TuKhoa" />
+
+                        <!-- Hình ảnh sản phẩm -->
+                        <img src="/img/@sp.HinhAnh" alt="@sp.TenSp" class="shop-card__image" />
+
+                        <!-- Tên và giá -->
+                        <div class="shop-card__name">@sp.TenSp</div>
+                        <div class="shop-card__price">@sp.Gia?.ToString("N0") VNĐ</div>
+
+                        <!-- Số lượng -->
+                        <div class="shop-card__qty">
+                            Số lượng:
+                            <button type="button" class="qty-btn" onclick="decreaseQty(this)">-</button>
+                            <input name="soLuong" type="number" value="1" min="1" class="shop-card__input" />
+                            <button type="button" class="qty-btn" onclick="increaseQty(this)">+</button>
+                        </div>
+
+                        <!-- Nút thêm vào giỏ -->
+                        <button type="submit" class="shop-card__add-button">
+                            <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                        </button>
+                    </form>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<script src="/Scripts/DSSanPham.js"></script>

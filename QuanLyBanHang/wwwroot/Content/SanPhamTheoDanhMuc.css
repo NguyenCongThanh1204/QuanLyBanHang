@@ -1,0 +1,28 @@
+﻿.shop-container {
+    padding: 20px;
+}
+
+.shop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-card {
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.shop-card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.shop-card__input {
+    width: 50px;
+    text-align: center;
+}

@@ -1,10 +1,37 @@
 ﻿@page
-@model IndexModel
+@model QuanLyBanHang.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Banner -->
+<div style="background-color: #A9F0C1; padding: 30px; display: flex; justify-content: space-between; align-items: center; margin-top:30px; border-radius: 10px; ">
+    <div>
+        <h1>Rau Tươi Giảm Giá Lớn</h1>
+            <p>Tiết kiệm 50% cho đơn hàng đầu tiên</p>
+        <form method="post" asp-page-handler="DatNgay">
+            <input type="hidden" name="maSp" value="SP01" />
+            <button type="submit" class="btn btn-success" style="padding: 10px 20px; border-radius: 8px;">
+                ĐẶT NGAY
+            </button>
+        </form>
+
+     </div>
+        <div class="col-md-4">
+            <img src="/images/raucu.jpg" class="img-fluid rounded" style="border: 10px;"/>
+        </div>
+ </div>
+
+<!-- Danh mục nổi bật từ SQL -->
+<h4 class="mb-3">Danh mục nổi bật</h4>
+<div class="row">
+    @foreach (var dm in Model.DanhMuc)
+    {
+        <div class="col-md-2 text-center mb-4">
+            <a href="/SanPhamTheoLoai?MaDM=@dm.MaDm" class="text-decoration-none">
+                <img src="@dm.HinhAnh" class="img-thumbnail" style="height: 100px;" />
+                <p class="fw-bold">@dm.TenDm</p>
+            </a>
+        </div>
+    }
 </div>

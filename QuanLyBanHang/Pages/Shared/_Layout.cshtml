@@ -1,51 +1,95 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@inject QuanLyBanHang.Models.QLBHangContext _context
+@using Microsoft.AspNetCore.Http
+@{
+    var danhMucs = _context.DanhMucs.ToList();
+    var maND = Context.Session.GetString("MaND"); 
+
+    int slGioHang = 0;
+    if (!string.IsNullOrEmpty(maND))
+    {
+        var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaNd == maND);
+        if (gioHang != null)
+        {
+            slGioHang = _context.ChiTietGioHangs
+                .Where(c => c.MaGioHang == gioHang.MaGioHang)
+                .Sum(c => c.SoLuong.GetValueOrDefault());
+        }
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="vi">
 <head>
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - QuanLyBanHang</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/QuanLyBanHang.styles.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - MiniMart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">QuanLyBanHang</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+            <a class="navbar-brand" href="/">🛒 MiniMart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dmMenu" role="button" data-bs-toggle="dropdown">
+                            Danh mục
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (var dm in danhMucs)
+                            {
+                                <li>
+                                    <a class="dropdown-item" href="/SanPhamTheoLoai?MaDM=@dm.MaDm">@dm.TenDm</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+
+
+                <!-- Form tìm kiếm -->
+                    <form class="d-flex" method="get" action="/SanPhamTheoLoai">
+                        <input class="form-control me-2" type="text" name="TuKhoa" placeholder="Tìm sản phẩm..." />
+                        <button class="btn btn-outline-success" type="submit">Tìm</button>
+                    </form>
+
+
+                <!-- Giỏ hàng + Đăng nhập -->
+                <a class="btn btn-outline-primary ms-3" href="/GioHang">
+                    🛒 Giỏ hàng <span class="badge bg-danger">@slGioHang</span>
+                </a>
+
+                @if (maND == null)
+                {
+                    <a class="btn btn-outline-secondary ms-2" href="/DangNhap">Đăng nhập</a>
+                }
+                else
+                {
+                    <a class="btn btn-outline-danger ms-2" href="/DangXuat">Đăng xuất</a>
+                }
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="container mt-4">
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - QuanLyBanHang - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer class="text-center mt-5 mb-3 text-muted">
+        &copy; @DateTime.Now.Year - MiniMart
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+@page
+@model QuanLyBanHang.Pages.DanhMucModel
+@{
+    ViewData["Title"] = "Danh mục";
+}
+
+<h2>Danh mục sản phẩm</h2>
+<div class="row">
+    @foreach (var category in Model.DanhMucs)
+    {
+        <div class="col-md-3 text-center mb-4">
+            <a href="/SanPhamTheoLoai?MaDM=@category.MaDm">
+                <img src="@category.HinhAnh" class="img-fluid rounded" style="height:120px; object-fit:cover;" />
+                <h5>@category.TenDm</h5>
+            </a>
+        </div>
+    }
+</div>
