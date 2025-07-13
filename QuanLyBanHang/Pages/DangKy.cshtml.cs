@@ -46,7 +46,7 @@ namespace QuanLyBanHang.Pages
                 return Page();
             }
 
-            string connectionString = _configuration.GetConnectionString("DefaultConnection");
+            string connectionString = _configuration.GetConnectionString("QLBanHangConnection");
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -65,12 +65,12 @@ namespace QuanLyBanHang.Pages
                 }
                 else
                 {
-                    string insertQuery = "INSERT INTO NguoiDung (HoTen, Email, MatKhau, MaQuyen) VALUES (@HoTen, @Email, @MatKhau, @MaQuyen)";
+                    string insertQuery = "INSERT INTO NguoiDung (HoTen, Email, MatKhau, MaLoai) VALUES (@HoTen, @Email, @MatKhau, @MaLoai)";
                     SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
                     insertCmd.Parameters.AddWithValue("@HoTen", Input.HoTen);
                     insertCmd.Parameters.AddWithValue("@Email", Input.Email);
                     insertCmd.Parameters.AddWithValue("@MatKhau", Input.Password);
-                    insertCmd.Parameters.AddWithValue("@MaQuyen", "PQ03"); // Quy?n m?c ??nh user
+                    insertCmd.Parameters.AddWithValue("@MaLoai", "PQ03"); 
 
                     int result = insertCmd.ExecuteNonQuery();
 
@@ -81,7 +81,7 @@ namespace QuanLyBanHang.Pages
                     }
                     else
                     {
-                        ErrorMessage = "??ng ký th?t b?i. Vui lòng th? l?i.";
+                        ErrorMessage = "??ng kí th?t b?i. Vui lòng th? l?i.";
                         return Page();
                     }
                 }

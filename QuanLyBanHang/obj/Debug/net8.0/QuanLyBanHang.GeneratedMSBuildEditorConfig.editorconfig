@@ -17,65 +17,63 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLyBanHang
 build_property.RootNamespace = QuanLyBanHang
-build_property.ProjectDir = C:\QLBanHang\QuanLyBanHang\QuanLyBanHang\
+build_property.ProjectDir = D:\doAn403\QuanLyBanHang\QuanLyBanHang\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\QLBanHang\QuanLyBanHang\QuanLyBanHang
+build_property.MSBuildProjectDirectory = D:\doAn403\QuanLyBanHang\QuanLyBanHang
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/DangKy.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/DangKy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuZ0t5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/DangNhap.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuZ05oYXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/DanhMuc.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/DanhMuc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFuaE11Yy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/Error.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/GioHang.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/GioHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2lvSGFuZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/Index.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/Privacy.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/QuanLySanPham.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/QuanLySanPham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVhbkx5U2FuUGhhbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/SanPhamTheoLoai.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/SanPhamTheoLoai.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FuUGhhbVRoZW9Mb2FpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/_ViewImports.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/_ViewStart.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/QLBanHang/QuanLyBanHang/QuanLyBanHang/Pages/Shared/_Layout.cshtml]
+[D:/doAn403/QuanLyBanHang/QuanLyBanHang/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x34q5g905x

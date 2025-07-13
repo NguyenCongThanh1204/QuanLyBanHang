@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace QuanLyBanHang.Pages
 {
@@ -34,24 +37,22 @@ namespace QuanLyBanHang.Pages
 
         public void OnGet()
         {
-            // Clear session if needed on loading login page
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Clear();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
-                // ❌ Nếu dữ liệu không hợp lệ: yêu cầu nhập lại
                 return Page();
             }
 
-            // ✅ Nếu dữ liệu hợp lệ, kết nối CSDL kiểm tra đăng nhập
-            string connectionString = _configuration.GetConnectionString("DefaultConnection");
+            string connectionString = _configuration.GetConnectionString("QLBanHangConnection");
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT MaND, HoTen, MaQuyen FROM NguoiDung WHERE Email = @Email AND MatKhau = @MatKhau";
+                string query = "SELECT MaND, HoTen, MaLoai FROM NguoiDung WHERE Email = @Email AND MatKhau = @MatKhau";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Email", Input.Email);
                 cmd.Parameters.AddWithValue("@MatKhau", Input.Password);
@@ -61,21 +62,36 @@ namespace QuanLyBanHang.Pages
 
                 if (reader.HasRows)
                 {
-                    // ✅ Nếu thông tin đúng: lưu vào session
                     reader.Read();
-                    HttpContext.Session.SetInt32("MaND", Convert.ToInt32(reader["MaND"]));
-                    HttpContext.Session.SetString("HoTen", reader["HoTen"].ToString());
-                    string maQuyen = reader["MaQuyen"].ToString().Trim();
-                    HttpContext.Session.SetString("MaQuyen", maQuyen);
+                    int maND = Convert.ToInt32(reader["MaND"]);
+                    string hoTen = reader["HoTen"].ToString();
+                    string maQuyen = reader["MaLoai"].ToString().Trim();
 
-                    // ✅ Điều hướng theo quyền
+                    // Lưu Session nếu muốn
+                    HttpContext.Session.SetInt32("MaND", maND);
+                    HttpContext.Session.SetString("HoTen", hoTen);
+                    HttpContext.Session.SetString("MaLoai", maQuyen);
+
+                    // Tạo Claims và đăng nhập Cookie Auth
+                    var claims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Name, hoTen ?? ""),
+                        new Claim("MaND", maND.ToString()),
+                        new Claim("MaLoai", maQuyen)
+                    };
+
+                    var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                    var principal = new ClaimsPrincipal(identity);
+
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
                     if (maQuyen == "PQ01")
                     {
-                        return RedirectToPage("/QLSanPham"); // Admin
+                        return RedirectToPage("/QuanLySanPham");
                     }
                     else if (maQuyen == "PQ03")
                     {
-                        return RedirectToPage("/Index"); // User
+                        return RedirectToPage("/Index");
                     }
                     else
                     {
@@ -85,7 +101,6 @@ namespace QuanLyBanHang.Pages
                 }
                 else
                 {
-                    // ❌ Nếu thông tin sai: hiển thị thông báo lỗi
                     ErrorMessage = "Email hoặc mật khẩu không đúng!";
                     return Page();
                 }

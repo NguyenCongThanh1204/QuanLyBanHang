@@ -2,10 +2,12 @@
 @using Microsoft.AspNetCore.Http
 @{
     var danhMucs = _context.DanhMucs.ToList();
-    var maND = Context.Session.GetString("MaND"); 
+    var maNDStr = Context.Session.GetString("MaND");
 
     int slGioHang = 0;
-    if (!string.IsNullOrEmpty(maND))
+    int maND = 0;
+
+    if (!string.IsNullOrEmpty(maNDStr) && int.TryParse(maNDStr, out maND))
     {
         var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaNd == maND);
         if (gioHang != null)
@@ -69,14 +71,15 @@
                     🛒 Giỏ hàng <span class="badge bg-danger">@slGioHang</span>
                 </a>
 
-                @if (maND == null)
-                {
-                    <a class="btn btn-outline-secondary ms-2" href="/DangNhap">Đăng nhập</a>
-                }
-                else
-                {
-                    <a class="btn btn-outline-danger ms-2" href="/DangXuat">Đăng xuất</a>
-                }
+                    @if (string.IsNullOrEmpty(maNDStr))
+                    {
+                        <a class="btn btn-outline-secondary ms-2" href="/DangNhap">Đăng nhập</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-outline-danger ms-2" href="/DangXuat">Đăng xuất</a>
+                    }
+
             </div>
         </nav>
     </header>

@@ -19,18 +19,16 @@ namespace QuanLyBanHang.Pages
 
         public void OnGet()
         {
-            // Lấy 5 danh mục nổi bật (hoặc theo điều kiện)
             DanhMuc = _context.DanhMucs.Take(5).ToList();
         }
 
         public IActionResult OnPostDatNgay()
         {
-            // Giả sử mã sản phẩm cố định là "SP01"
-            var maSp = "SP01";
+            var maSp = "SP01"; // giữ nguyên string theo thiết kế ban đầu
             var soLuong = 1;
 
-            var maND = HttpContext.Session.GetString("MaND");
-            if (string.IsNullOrEmpty(maND))
+            var maNDStr = HttpContext.Session.GetString("MaND");
+            if (string.IsNullOrEmpty(maNDStr) || !int.TryParse(maNDStr, out int maND))
             {
                 TempData["Error"] = "Bạn cần đăng nhập để đặt hàng.";
                 return RedirectToPage("/DangNhap");

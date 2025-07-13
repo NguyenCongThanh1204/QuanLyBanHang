@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Pages/SanPhamTheoLoai.cshtml.cs (đã chỉnh hoàn chỉnh)
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using QuanLyBanHang.Models;
@@ -7,6 +9,7 @@ using System.Linq;
 
 namespace QuanLyBanHang.Pages
 {
+    [Authorize]
     public class SanPhamTheoLoaiModel : PageModel
     {
         private readonly QLBHangContext _context;
@@ -26,9 +29,7 @@ namespace QuanLyBanHang.Pages
 
         public IActionResult OnGet()
         {
-            var query = _context.SanPhams
-                .Include(sp => sp.MaDmNavigation)
-                .AsQueryable();
+            var query = _context.SanPhams.Include(sp => sp.MaDmNavigation).AsQueryable();
 
             if (MaDM.HasValue)
             {
@@ -46,15 +47,13 @@ namespace QuanLyBanHang.Pages
 
         public IActionResult OnPostThemVaoGio(string maSp, int soLuong, int? maDM, string? tuKhoa)
         {
-            // ✅ Kiểm tra đăng nhập
-            var maND = HttpContext.Session.GetString("MaND");
-            if (string.IsNullOrEmpty(maND))
+            var maNDClaim = User.FindFirst("MaND")?.Value;
+            if (string.IsNullOrEmpty(maNDClaim) || !int.TryParse(maNDClaim, out int maND))
             {
                 TempData["Error"] = "Vui lòng đăng nhập để thêm vào giỏ hàng.";
                 return RedirectToPage("/DangNhap");
             }
 
-            // ✅ Tìm hoặc tạo giỏ hàng
             var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaNd == maND);
             if (gioHang == null)
             {
@@ -67,9 +66,7 @@ namespace QuanLyBanHang.Pages
                 _context.SaveChanges();
             }
 
-            // ✅ Thêm hoặc cập nhật sản phẩm trong giỏ
-            var chiTiet = _context.ChiTietGioHangs
-                .FirstOrDefault(ct => ct.MaGioHang == gioHang.MaGioHang && ct.MaSp == maSp);
+            var chiTiet = _context.ChiTietGioHangs.FirstOrDefault(ct => ct.MaGioHang == gioHang.MaGioHang && ct.MaSp == maSp);
 
             if (chiTiet != null)
             {
@@ -88,7 +85,6 @@ namespace QuanLyBanHang.Pages
             _context.SaveChanges();
             TempData["Success"] = "Đã thêm sản phẩm vào giỏ hàng.";
 
-            // ✅ Quay lại với thông tin lọc cũ (MaDM hoặc TuKhoa)
             return RedirectToPage(new { MaDM = maDM, TuKhoa = tuKhoa });
         }
     }

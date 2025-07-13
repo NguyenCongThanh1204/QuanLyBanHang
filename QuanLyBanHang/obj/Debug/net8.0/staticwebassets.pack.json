@@ -1,0 +1,517 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuanLyBanHang.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuanLyBanHang.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\Content\\SanPhamTheoDanhMuc.css",
+      "PackagePath": "staticwebassets\\Content\\SanPhamTheoDanhMuc.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\css\\DangKi.css",
+      "PackagePath": "staticwebassets\\css\\DangKi.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\css\\DangNhap.css",
+      "PackagePath": "staticwebassets\\css\\DangNhap.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\css\\QuanLySanPham.css",
+      "PackagePath": "staticwebassets\\css\\QuanLySanPham.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\7up.jpg",
+      "PackagePath": "staticwebassets\\images\\7up.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\bachobomy.jpg",
+      "PackagePath": "staticwebassets\\images\\bachobomy.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banh.jpg",
+      "PackagePath": "staticwebassets\\images\\banh.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhchocopie.jpg",
+      "PackagePath": "staticwebassets\\images\\banhchocopie.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhcustas.jpg",
+      "PackagePath": "staticwebassets\\images\\banhcustas.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhgao.jpg",
+      "PackagePath": "staticwebassets\\images\\banhgao.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhgauhello.jpg",
+      "PackagePath": "staticwebassets\\images\\banhgauhello.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhgaunau.jpg",
+      "PackagePath": "staticwebassets\\images\\banhgaunau.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhkeo.jpg",
+      "PackagePath": "staticwebassets\\images\\banhkeo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhmilo.jpg",
+      "PackagePath": "staticwebassets\\images\\banhmilo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhnabati.jpg",
+      "PackagePath": "staticwebassets\\images\\banhnabati.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhoreo.jpg",
+      "PackagePath": "staticwebassets\\images\\banhoreo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhque.jpg",
+      "PackagePath": "staticwebassets\\images\\banhque.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\banhsuachua.jpg",
+      "PackagePath": "staticwebassets\\images\\banhsuachua.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\bapcai.jpg",
+      "PackagePath": "staticwebassets\\images\\bapcai.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\bohuc.jpg",
+      "PackagePath": "staticwebassets\\images\\bohuc.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\ca.jpg",
+      "PackagePath": "staticwebassets\\images\\ca.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\cam.jpg",
+      "PackagePath": "staticwebassets\\images\\cam.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\cangu.jpg",
+      "PackagePath": "staticwebassets\\images\\cangu.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\carot.jpg",
+      "PackagePath": "staticwebassets\\images\\carot.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\cathu.jpg",
+      "PackagePath": "staticwebassets\\images\\cathu.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\chomchom.jpg",
+      "PackagePath": "staticwebassets\\images\\chomchom.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\coca.jpg",
+      "PackagePath": "staticwebassets\\images\\coca.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\douong.jpg",
+      "PackagePath": "staticwebassets\\images\\douong.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\ghexanh.jpg",
+      "PackagePath": "staticwebassets\\images\\ghexanh.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\haisan.jpg",
+      "PackagePath": "staticwebassets\\images\\haisan.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\huda.jpg",
+      "PackagePath": "staticwebassets\\images\\huda.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\larue.jpg",
+      "PackagePath": "staticwebassets\\images\\larue.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\mangcut.jpg",
+      "PackagePath": "staticwebassets\\images\\mangcut.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\mucphuquoc.jpg",
+      "PackagePath": "staticwebassets\\images\\mucphuquoc.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\pepsi.jpg",
+      "PackagePath": "staticwebassets\\images\\pepsi.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\raucu.jpg",
+      "PackagePath": "staticwebassets\\images\\raucu.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\stingdau.jpg",
+      "PackagePath": "staticwebassets\\images\\stingdau.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\stingvang.jpg",
+      "PackagePath": "staticwebassets\\images\\stingvang.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suabien.jpg",
+      "PackagePath": "staticwebassets\\images\\suabien.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suachuakun.jpg",
+      "PackagePath": "staticwebassets\\images\\suachuakun.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suadac.jpg",
+      "PackagePath": "staticwebassets\\images\\suadac.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suagrowplus.jpg",
+      "PackagePath": "staticwebassets\\images\\suagrowplus.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suanuti.jpg",
+      "PackagePath": "staticwebassets\\images\\suanuti.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suatuoi.jpg",
+      "PackagePath": "staticwebassets\\images\\suatuoi.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suatuoiTH.jpg",
+      "PackagePath": "staticwebassets\\images\\suatuoiTH.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\suatuoivinamilk.jpg",
+      "PackagePath": "staticwebassets\\images\\suatuoivinamilk.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tao.jpg",
+      "PackagePath": "staticwebassets\\images\\tao.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\thibo.jpg",
+      "PackagePath": "staticwebassets\\images\\thibo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\thitbachi.jpg",
+      "PackagePath": "staticwebassets\\images\\thitbachi.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\thitbo.jpg",
+      "PackagePath": "staticwebassets\\images\\thitbo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\thitheo.jpg",
+      "PackagePath": "staticwebassets\\images\\thitheo.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tiger.jpg",
+      "PackagePath": "staticwebassets\\images\\tiger.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tom.jpg",
+      "PackagePath": "staticwebassets\\images\\tom.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tomdat.jpg",
+      "PackagePath": "staticwebassets\\images\\tomdat.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tomsu.jpg",
+      "PackagePath": "staticwebassets\\images\\tomsu.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\tomtit.jpg",
+      "PackagePath": "staticwebassets\\images\\tomtit.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\traicay.jpg",
+      "PackagePath": "staticwebassets\\images\\traicay.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\trung.jpg",
+      "PackagePath": "staticwebassets\\images\\trung.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\trunggacn.jpg",
+      "PackagePath": "staticwebassets\\images\\trunggacn.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\trunggata.jpg",
+      "PackagePath": "staticwebassets\\images\\trunggata.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\vai.jpg",
+      "PackagePath": "staticwebassets\\images\\vai.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\xoai.jpg",
+      "PackagePath": "staticwebassets\\images\\xoai.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\images\\ôi.jpg",
+      "PackagePath": "staticwebassets\\images\\ôi.jpg"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\doAn403\\QuanLyBanHang\\QuanLyBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuanLyBanHang.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.QuanLyBanHang.props",
+      "PackagePath": "build\\QuanLyBanHang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QuanLyBanHang.props",
+      "PackagePath": "buildMultiTargeting\\QuanLyBanHang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.QuanLyBanHang.props",
+      "PackagePath": "buildTransitive\\QuanLyBanHang.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
